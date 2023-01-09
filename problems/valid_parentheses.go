@@ -4,16 +4,6 @@ import (
 	"fmt"
 )
 
-func main() {
-	// input
-	s := "{[]}"
-
-	// output
-	result := isValid(s)
-
-	fmt.Println(result)
-}
-
 func isValid(s string) bool {
 	if len(s) == 0 || len(s)%2 == 1 {
 		return false
@@ -38,4 +28,14 @@ func isValid(s string) bool {
 	}
 
 	return len(stack) == 0
+}
+
+func main() {
+	// input
+	s := "{[]}"
+
+	// output
+	result := isValid(s)
+
+	fmt.Println(result)
 }
